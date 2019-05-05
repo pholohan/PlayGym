@@ -1,0 +1,28 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{trainermenu id:"trainerdashboard"/}
+
+<section class="ui segment">
+    <div class="ui four column two row middle aligned grid basic segment">
+        <div class="center aligned column">
+            <i class="big user icon"></i>
+            <p>${member.name}</p>
+        </div>
+        <div class="center aligned column">
+            <i class="${iwiColor}"></i>
+            <p>IDEAL WEIGHT INDICATOR</p>
+        </div>
+        <div class="center aligned column">
+            <i class="big heartbeat icon">${bmi}</i>
+            <p>BMI</p>
+        </div>
+        <div class="center aligned column">
+            <i class="big user md icon"></i>
+            <p>${bmicat}</p>
+        </div>
+    </div>
+</section>
+
+#{listassessmentstrainer assessmentlist:assessmentlist/}
+

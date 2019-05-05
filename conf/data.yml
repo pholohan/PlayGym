@@ -1,0 +1,47 @@
+Assessment(a1):
+  weight: 123.3
+  chest: 45.0
+  thigh: 12.5
+  upperarm: 23.3
+  waist: 32.0
+  hips: 38.0
+
+Assessment(a2):
+  weight: 123.3
+  chest: 45.0
+  thigh: 12.0
+  upperarm: 23.3
+  waist: 31.0
+  hips: 36.0
+
+Member(m1):
+  name: Homer Simpson
+  email: homer.simpson@springfield.com
+  password: duffs
+  address: 70 Springfield Avenue
+  gender: male
+  height: 72.0
+  startingweight: 80.0
+  assessmentlist:
+  - a1
+
+Member(m2):
+  name: Marge Simpson
+  email: marge.simpson@springfield.com
+  password: lisa
+  address: 70 Springfield Avenue
+  gender: female
+  height: 60.0
+  startingweight: 55.0
+  assessmentlist:
+  - a2
+
+Trainer(t1):
+  name: Lisa Simpson
+  email: lisa.simpson@springfield.com
+  password: books
+  address: 100 Springfield Avenue
+  memberlist:
+  - m1
+  - m2
+

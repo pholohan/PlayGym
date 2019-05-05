@@ -1,0 +1,40 @@
+<table class="ui celled table">
+    <thead>
+    <tr>
+        <th>Weight</th>
+        <th>Chest</th>
+        <th>Thigh</th>
+        <th>Upper Arm</th>
+        <th>Waist</th>
+        <th>Hips</th>
+        <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    #{list items:_assessmentlist, as:'assessment'}
+    <tr>
+        <td>
+        ${assessment.weight}
+        </td>
+        <td>
+        ${assessment.chest}
+        </td>
+        <td>
+        ${assessment.thigh}
+        </td>
+        <td>
+        ${assessment.upperarm}
+        </td>
+        <td>
+        ${assessment.waist}
+        </td>
+        <td>
+        ${assessment.hips}
+        </td>
+        <td>
+        ${assessment.comment}
+        </td>
+    </tr>
+    #{/list}
+    </tbody>
+</table>

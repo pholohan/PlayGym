@@ -1,0 +1,51 @@
+<table class="ui celled table">
+    #{list items:_assessmentlist, as:'assessment'}
+    <thead>
+        <tr>
+            <th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+            ${assessment.weight}
+            </td>
+            <td>
+            ${assessment.chest}
+            </td>
+            <td>
+            ${assessment.thigh}
+            </td>
+            <td>
+            ${assessment.upperarm}
+            </td>
+            <td>
+            ${assessment.waist}
+            </td>
+            <td>
+            ${assessment.hips}
+            </td>
+            <td>
+            ${assessment.comment}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="7">
+                <form class="ui form" action="/trainer/${assessment.id}/addcomment" method="POST">
+                    <h3 class="ui header">Comments</h3>
+                        <div class="field">
+                            <input placeholder="Comments" type="text" name="comment">
+                        </div>
+                        <button class="ui blue submit button">Update</button>
+                </form>
+            </td>
+        </tr>
+    #{/list}
+    </tbody>
+</table>
